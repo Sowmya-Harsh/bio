@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your Name | Data Science Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <div class="nav__brand">Your Name</div>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Data Science • Machine Learning • Analytics</p>
+      <h1 class="hero__title">Hi, I’m <span class="accent">Sowmya Janmahanthi</span>.</h1>
+      <p class="hero__subtitle">
+        A data science enthusiast focusing on turning messy data into clear, actionable insights using
+        Python, machine learning, and statistical modeling.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__meta">
+        <span>Location: Luxembourg</span>
+        <span>Open to: Internships · Collaborations</span>
+      </div>
+    </div>
+    <div class="hero__card">
+      <div class="hero__card-inner">
+        <h2>Quick Snapshot</h2>
+        <ul>
+          <li>Graduate student in Machine Learning</li>
+          <li>Time series, GNNs, biomedical NLP</li>
+          <li>Python · PyTorch · SQL · Docker</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section--alt">
+    <div class="container two-col">
+      <div>
+        <h2>About</h2>
+        <p>
+          I am a graduate student specializing in machine learning with a focus on time series forecasting,
+          graph neural networks, and biomedical applications.
+        </p>
+        <p>
+          My work spans end‑to‑end ML pipelines, from data engineering and model experimentation to
+          deployment and performance optimization.
+        </p>
+      </div>
+      <div class="highlight-box">
+        <h3>What I enjoy</h3>
+        <ul>
+          <li>Designing ML experiments that answer concrete questions</li>
+          <li>Debugging tricky training issues and performance bottlenecks</li>
+          <li>Explaining complex models in simple terms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">scikit‑learn</span>
+        <span class="chip">PyTorch</span>
+        <span class="chip">PyTorch Geometric</span>
+        <span class="chip">Time Series (ARIMA, RNNs)</span>
+        <span class="chip">Graph Neural Networks</span>
+        <span class="chip">NLP</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Git & GitHub</span>
+        <span class="chip">Docker</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section--alt">
+    <div class="container">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Time Series Forecasting for Energy Demand</h3>
+          <p>
+            Built ARIMA and deep learning models to forecast short‑term energy demand, comparing classical
+            models with LSTM‑based approaches on real‑world data.
+          </p>
+          <p class="card__meta">Python · Pandas · ARIMA · LSTMs</p>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Report</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>GraphSAGE for Gene Expression Networks</h3>
+          <p>
+            Modeled patient similarity as a graph and applied GraphSAGE to predict disease progression from
+            high‑dimensional gene expression data.
+          </p>
+          <p class="card__meta">PyTorch Geometric · GraphSAGE</p>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Slides</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Biomedical Literature Mining</h3>
+          <p>
+            Built an NLP pipeline to extract entities and relations from biomedical abstracts and construct a
+            knowledge graph for hypothesis generation.
+          </p>
+          <p class="card__meta">NLP · spaCy · Neo4j</p>
+          <div class="card__links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Contact</h2>
+        <p>
+          Happy to discuss research collaborations, projects, or opportunities in machine learning and data
+          science.
+        </p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">@yourusername</a></li>
+          <li>LinkedIn: <a href="#" target="_blank" rel="noopener">Your LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="contact-card">
+        <h3>Quick message</h3>
+        <p>
+          You can also create a simple contact form later with a service like Formspree or Netlify Forms.
+        </p>
+        <p>
+          For now, email and LinkedIn are the easiest ways to reach me.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <span>© <span id="year"></span> Your Name</span>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
