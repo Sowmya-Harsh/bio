@@ -3,8 +3,8 @@
   --bg-alt: #ffffff;
   --text: #111827;
   --muted: #6b7280;
-  --accent: #2563eb;
-  --accent-soft: #dbeafe;
+  --accent: #D3D3FF;      /* main lavender */
+  --accent-soft: #F0EFFF; /* lighter lavender background */
   --border: #e5e7eb;
   --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.08);
   --radius-lg: 18px;
@@ -441,3 +441,4 @@ body {
 .back-to-top:hover {
   text-decoration: underline;
 }
+
