@@ -39,19 +39,15 @@
     <svg class="hero__decoration" width="300" height="300" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Spiral dashed trail -->
       <path d="M 163 57
-               C 156 63, 151 70, 141 75
-               C 136 77, 134 80, 136 83
-               C 138 86, 141 85, 143 82
-               M 138 78
-               C 126 85, 116 95, 106 105
-               C 101 110, 99 113, 101 117
-               C 103 121, 108 120, 111 115
-               M 104 110
-               C 91 123, 76 140, 61 155
-               C 54 162, 51 167, 53 172
-               C 55 177, 61 175, 64 170
-               M 58 163
-               C 46 177, 36 185, 31 190" 
+               C 150 68, 140 78, 125 88
+               C 115 93, 110 98, 113 105
+               C 116 112, 125 110, 130 103
+               M 120 95
+               C 100 112, 80 130, 60 148
+               C 48 158, 42 168, 46 178
+               C 50 188, 62 184, 70 174
+               M 55 160
+               C 35 182, 20 200, 10 215" 
             stroke="var(--accent)" 
             stroke-width="2.5" 
             stroke-dasharray="6 6" 
@@ -131,7 +127,7 @@
   <section id="education" class="section">
     <div class="container">
       <h2>Education</h2>
-      <div class="grid">
+      <div class="grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
         <article class="card">
           <h3>Master of Data Science</h3>
           <p><strong>University of Luxembourg</strong></p>
@@ -172,7 +168,7 @@
   <section id="experience" class="section section--alt">
     <div class="container">
       <h2>Experience</h2>
-      <div class="grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+      <div class="grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
         <article class="card">
           <h3>Research Assistant</h3>
           <p><strong>Luxembourg Centre for Systems Biomedicine</strong></p>
@@ -337,7 +333,7 @@
 <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
-      <h2>Selected Projects</h2>
+      <h2>Projects</h2>
       <div class="grid">
         <article class="card">
           <h3><a href="https://github.com/Sowmya-Harsh/RNA-Seq_RAP" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">RNA-Seq Analysis Pipeline</a></h3>
@@ -435,6 +431,7 @@
   <footer class="footer">
     <div class="container footer__content">
       <span>© <span id="year"></span> Sowmya Janmahanthi</span>
+
 
 
 
