@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -34,32 +36,41 @@
   <!-- Hero Section -->
   <section class="hero">
     <!-- Decorative paper plane -->
-    <svg class="hero__decoration" width="280" height="280" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Paper plane at 30 degree angle -->
-      <g transform="translate(155, 45) rotate(-20)">
-        <!-- Main plane body -->
-        <path d="M0 0 L35 12 L0 24 L8 12 Z" fill="var(--accent)" opacity="0.85" stroke="var(--accent)" stroke-width="1"/>
-        <!-- Center fold line -->
-        <path d="M8 12 L35 12" stroke="var(--accent)" stroke-width="1.5" opacity="0.6"/>
-      </g>
-      <!-- Spiral dashed trail with loops -->
-      <path d="M 148 55
-               C 145 78, 130 85, 100 115
-               C 110 95, 85 130, 80 140
-               C 85 150, 95 145, 95 135
-               C 95 125, 90 120, 75 125
-               M 85 130
-               C 60 130, 55 145, 40 155
-               C 38 165, 45 162, 45 155
-               C 45 150, 40 148, 35 150
-               M 40 155
-               C 20 155, 30 170, 20 180" 
+<!-- Decorative paper plane -->
+    <svg class="hero__decoration" width="300" height="300" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Spiral dashed trail FIRST (so it appears behind) -->
+      <path d="M 163 60
+               C 155 70, 148 82, 138 92
+               C 135 95, 133 98, 135 101
+               C 137 104, 141 103, 144 100
+               C 148 96, 145 92, 142 88
+               
+               M 140 95
+               C 128 108, 115 122, 100 135
+               C 96 139, 93 143, 95 147
+               C 97 151, 102 149, 106 145
+               C 111 140, 108 135, 104 130
+               
+               M 102 138
+               C 85 155, 68 170, 50 182
+               C 45 186, 41 190, 43 195
+               C 45 200, 51 198, 56 193
+               C 62 187, 58 181, 53 176
+               
+               M 52 185
+               C 38 197, 25 208, 15 218" 
             stroke="var(--accent)" 
-            stroke-width="2.5" 
-            stroke-dasharray="6 6" 
+            stroke-width="3" 
+            stroke-dasharray="7 7" 
             fill="none" 
-            opacity="0.6"
+            opacity="0.5"
             stroke-linecap="round"/>
+      
+      <!-- Paper plane -->
+      <g transform="translate(165, 50) rotate(-15)">
+        <path d="M0 0 L40 15 L0 30 L10 15 Z" fill="var(--accent)" opacity="0.85"/>
+        <path d="M10 15 L40 15" stroke="var(--accent)" stroke-width="2" opacity="0.6"/>
+      </g>
     </svg>
     <div class="hero__content">
       <p class="hero__eyebrow">Data Science • Machine Learning • Bioinformatics • Data Analysis</p>
@@ -74,7 +85,7 @@
         <a href="#contact" class="btn btn--ghost">Get in touch</a>
       </div>
       <div class="hero__meta">
-        <span> Esch-sur-Alzette, Luxembourg</span>
+        <span><i class="fas fa-map-marker-alt"></i>Luxembourg</span>
         <span>Open to: Research · Collaborations</span>
       </div>
     </div>
@@ -406,9 +417,9 @@
           data science, and bioinformatics. Feel free to reach out!
         </p>
         <ul class="contact-list">
-          <li> Email: <a href="mailto:sowmyajanmahanthi@gmail.com" target="_blank" rel="noopener">sowmyajanmahanthi@gmail.com</a></li>
-          <li> LinkedIn: <a href="https://www.linkedin.com/in/sowmyajanmahanthi/" target="_blank" rel="noopener">linkedin.com/in/sowmyajanmahanthi</a></li>
-          <li> GitHub: <a href="https://github.com/Sowmya-Harsh" target="_blank" rel="noopener">github.com/Sowmya-Harsh</a></li>
+          <li><i class="fas fa-envelope"></i> Email: <a href="mailto:sowmyajanmahanthi@gmail.com" target="_blank" rel="noopener">sowmyajanmahanthi@gmail.com</a></li>
+          <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/sowmyajanmahanthi/" target="_blank" rel="noopener">linkedin.com/in/sowmyajanmahanthi</a></li>
+          <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Sowmya-Harsh" target="_blank" rel="noopener">github.com/Sowmya-Harsh</a></li>
         </ul>
       </div>
       <div class="contact-card">
@@ -426,6 +437,7 @@
   <footer class="footer">
     <div class="container footer__content">
       <span>© <span id="year"></span> Sowmya Janmahanthi</span>
+
 
 
 
