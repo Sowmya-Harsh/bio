@@ -10,15 +10,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <style>
+    .hero {
+      display: grid !important;
+      grid-template-columns: auto 1fr auto !important;
+      gap: 36px !important;
+      align-items: center !important;
+    }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr !important; }
+    }
     .hero__photo {
-      width: 160px;
-      height: 160px;
-      border-radius: 12px;
+      width: 220px;
+      height: 280px;
+      border-radius: 16px;
       object-fit: cover;
+      object-position: top;
       border: 4px solid var(--accent-soft);
-      box-shadow: 0 6px 24px rgba(123,91,163,0.22);
+      box-shadow: 0 8px 28px rgba(123,91,163,0.22);
       display: block;
-      margin: 0 auto 1.25rem;
     }
     .skills-table {
       width: 100%;
@@ -82,6 +91,11 @@
 
   <!-- Hero -->
   <section class="hero">
+    <!-- Column 1: Photo -->
+    <div>
+      <img class="hero__photo" src="https://lh3.googleusercontent.com/d/1cceI_dLa84S6Htmop3apXOaVsh2TeD8a" alt="Sowmya Janmahanthi">
+    </div>
+    <!-- Column 2: Text -->
     <div class="hero__content">
       <p class="hero__eyebrow">Data Science · Machine Learning · AI · Data Analysis</p>
       <h1 class="hero__title">Hi, I'm <span class="accent">Sowmya Janmahanthi</span>.</h1>
@@ -99,11 +113,11 @@
         <span>Open to: Data Science · ML · Research roles</span>
       </div>
     </div>
+    <!-- Column 3: Snapshot -->
     <div class="hero__card">
-      <img class="hero__photo" src="https://lh3.googleusercontent.com/d/1cceI_dLa84S6Htmop3apXOaVsh2TeD8a" alt="Sowmya Janmahanthi">
       <div class="hero__card-inner">
         <h2>Quick Snapshot</h2>
-        <ul style="text-align:left;">
+        <ul>
           <li>Master's Student in Data Science</li>
           <li>Focus: ML, NLP and AI Systems</li>
           <li>Python · R · PyTorch · HPC · SQL</li>
