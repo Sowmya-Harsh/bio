@@ -69,7 +69,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 100;
   backdrop-filter: blur(16px);
   background: linear-gradient(to bottom, rgba(245, 245, 247, 0.92), rgba(245, 245, 247, 0.84));
   border-bottom: 1px solid rgba(148, 163, 184, 0.2);
@@ -171,6 +171,8 @@ body {
   padding: 48px 24px 72px;
   gap: 32px;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 900px) {
@@ -222,6 +224,13 @@ body {
 .hero__card {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 3;
 }
 
 .hero__card-inner {
@@ -449,6 +458,7 @@ body {
 .section {
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 
 .section::before {
@@ -471,21 +481,3 @@ body {
   bottom: -100px;
   right: -50px;
 }
-
-/* Ensure content layers above flying plane */
-.site-header {
-  z-index: 100;
-}
-
-.section {
-  position: relative;
-  z-index: 2;
-}
-
-.hero__content,
-.hero__card {
-  position: relative;
-  z-index: 3;
-}
-
-
