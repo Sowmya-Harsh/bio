@@ -445,50 +445,6 @@ body {
   text-decoration: underline;
 }
 
-
-
-
-/* Hero decoration */
-.hero {
-  position: relative;
-  z-index: 2;
-}
-
-.hero__decoration {
-  position: fixed;
-  top: 70%;
-  left: -150px;
-  opacity: 0.25;
-  animation: flyAcross 25s linear infinite;
-  pointer-events: none;
-  z-index: 0;
-}
-
-@keyframes flyAcross {
-  0% {
-    left: -150px;
-    top: 70%;
-    transform: rotate(-30deg);
-  }
-  25% {
-    top: 55%;
-    transform: rotate(-25deg);
-  }
-  50% {
-    top: 35%;
-    transform: rotate(-20deg);
-  }
-  75% {
-    top: 20%;
-    transform: rotate(-15deg);
-  }
-  100% {
-    left: calc(100% + 150px);
-    top: 10%;
-    transform: rotate(-10deg);
-  }
-}
-
 /* Section decorations */
 .section {
   position: relative;
