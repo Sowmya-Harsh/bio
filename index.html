@@ -9,8 +9,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .hero__photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-soft);
+      box-shadow: 0 4px 16px rgba(123,91,163,0.18);
+      margin-bottom: 1rem;
+    }
+    .hero__photo{
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      border: 3px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    .skills-table th {
+      text-align: left;
+      padding: 0.6rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .skills-table th:first-child { border-radius: 8px 0 0 0; }
+    .skills-table th:last-child  { border-radius: 0 8px 0 0; }
+    .skills-table td {
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      vertical-align: top;
+    }
+    .skills-table tr:last-child td { border-bottom: none; }
+    .skills-table tr:nth-child(even) td { background: #fafafa; }
+    .skills-table td:first-child {
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      width: 180px;
+    }
+    .skills-wrapper {
+      background: #fff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(15,23,42,0.06);
+    }
+  </style>
 </head>
 <body>
+
   <!-- Navigation -->
   <header class="site-header" id="top">
     <nav class="nav">
@@ -30,71 +91,71 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="hero__content">
-      <p class="hero__eyebrow">Data Science • Machine Learning • Bioinformatics • Data Analysis</p>
+      <p class="hero__eyebrow">Data Science · Machine Learning · AI · Data Analysis</p>
       <h1 class="hero__title">Hi, I'm <span class="accent">Sowmya Janmahanthi</span>.</h1>
       <p class="hero__subtitle">
-        Master's student in Data Science specializing in AI & Machine Learning. 
-        Strong foundations in machine learning, deep learning, data engineering, and full-stack development, 
-        with a track record of transforming complex research problems into scalable, high-impact tools.
+        Master's student in Data Science specializing in AI and Machine Learning.
+        Strong foundations in machine learning, deep learning, data engineering, and full-stack development,
+        with a track record of transforming complex problems into scalable, high-impact tools.
       </p>
       <div class="hero__actions">
         <a href="#projects" class="btn btn--primary">View Projects</a>
         <a href="#contact" class="btn btn--ghost">Get in touch</a>
       </div>
       <div class="hero__meta">
-        <span><i class="fas fa-map-marker-alt"></i>  Luxembourg</span>
-        <span>Open to: Research · Collaborations</span>
+        <span><i class="fas fa-map-marker-alt"></i> Luxembourg</span>
+        <span>Open to: Data Science · ML · Research roles</span>
       </div>
     </div>
     <div class="hero__card">
-      <div class="hero__card-inner">
-        <h2>Quick Snapshot</h2>
-        <ul>
+      <div class="hero__card-inner" style="text-align:center;">
+        <img class="hero__photo" src="https://1drv.ms/i/c/dd11a4d6adff96ea/IQB1SYzjC4JBRbtzCXxIIBb1AfdK39GsDxbiIdtZIFHkGQI?e=g6enxE&download=1" alt="Sowmya Janmahanthi">
+        <h2 style="text-align:left;">Quick Snapshot</h2>
+        <ul style="text-align:left;">
           <li>Master's Student in Data Science</li>
-          <li>Focus: ML & Bioinformatics</li>
+          <li>Focus: ML, NLP and AI Systems</li>
           <li>Python · R · PyTorch · HPC · SQL</li>
-          <li>Worked as Research Assistant at LCSB</li>
+          <li>Research Assistant at LCSB</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="section section--alt">
     <div class="container two-col">
       <div>
         <h2>About</h2>
         <p>
-          I am a Master's student in Data Science at the University of Luxembourg, specializing in 
-          Statistics, AI and machine learning. My work focuses on bioinformatics, 
-          computational biology, and leveraging advanced ML techniques to solve complex biological and real-world problems.
+          I am a Master's student in Data Science at the University of Luxembourg, specializing in
+          Statistics, AI and Machine Learning. I build end-to-end ML systems from data pipelines and
+          model experimentation to deployment and performance optimization.
         </p>
         <p>
-          My expertise spans end-to-end ML pipelines, from data engineering and model experimentation to
-          deployment and performance optimization. I'm particularly passionate about working with biomedical 
-          data and building tools that enable researchers to extract meaningful insights from complex datasets.
+          Currently working as a Research Assistant at the Luxembourg Centre for Systems Biomedicine,
+          developing solutions for biomedical data integration and visualization.
         </p>
         <p>
-          Currently working as a Research Assistant at the Luxembourg Centre for Systems Biomedicine, 
-          where I'm developing innovative solutions for biomedical data integration and visualization.
+          Passionate about NLP, graph-based ML, and building tools that help people extract meaningful
+          insights from complex data.
         </p>
       </div>
       <div class="highlight-box">
         <h3>What I enjoy</h3>
         <ul>
-          <li>Working with biomedical and biological data</li>
           <li>Designing ML experiments that answer concrete questions</li>
           <li>Building scalable data pipelines and platforms</li>
-          <li>Debugging tricky data issues and performance bottlenecks</li>
+          <li>Working with NLP and graph-based systems</li>
+          <li>Debugging tricky data and performance bottlenecks</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <section id="education" class="section">
     <div class="container">
       <h2>Education</h2>
@@ -104,77 +165,66 @@
           <p><strong>University of Luxembourg</strong></p>
           <p class="card__meta">2024 - 2026</p>
           <p>
-            Specialized coursework in Mathematical Statistics & Statistical Learning, Machine Learning & Deep Learning, 
-            High Performance Computing (GPU workflows, Parallel Computations), Big Data Analytics, 
-            Bioinformatics & Computational Biology.
+            Coursework in Statistical Learning, Machine Learning and Deep Learning,
+            High Performance Computing, Big Data Analytics, Bioinformatics.
           </p>
-          <p style="margin-top: 0.75rem;">
-            <strong>Master's Thesis :</strong> AI-driven tool for querying standardized 
-            molecular maps using NLP and structured biomedical data at LCSB Bioinformatics Core.
+          <p style="margin-top:0.75rem;">
+            <strong>Thesis:</strong> AI-driven tool for querying standardized molecular maps
+            using NLP and structured biomedical data at LCSB Bioinformatics Core.
           </p>
         </article>
-
         <article class="card">
           <h3>Bachelor's in Engineering</h3>
           <p><strong>JNTU Kakinada, India</strong></p>
           <p class="card__meta">2019 - 2023 | GPA: 9.3/10</p>
-          <p>
-            Strong foundation in Mathematics, and Engineering
-          </p>
+          <p>Strong foundation in Mathematics and Engineering.</p>
         </article>
-
         <article class="card">
           <h3>High School</h3>
           <p class="card__meta">GPA: 9.94/10</p>
-          <p>
-            Excellent academic performance with strong foundations in mathematics, physics, and chemistry.
-          </p>
+          <p>Outstanding academic performance with strong foundations in mathematics, physics, and chemistry.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Experience -->
   <section id="experience" class="section section--alt">
     <div class="container">
       <h2>Experience</h2>
       <div class="grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
         <article class="card">
-          <h3>Research Assistant</h3>
+          <h3>Data Science Intern <span style="font-weight:400; font-size:0.85rem;">(Thesis)</span></h3>
           <p><strong>Luxembourg Centre for Systems Biomedicine</strong></p>
-          <p class="card__meta">Apr 2025 - Present</p>
-          <p> Supervisors: Adrien Rougny, Marek Ostazewski - Bioinformatics Core </p>
-          <ul style="margin: 0.75rem 0; padding-left: 1.25rem; font-size: 0.93rem;">
-            <li>Assessed and integrated gene/protein identifier mappings across major biomedical resources (BridgeDb, HGNC, and others)</li>
-            <li>Standardized 1M+ identifier mappings into structured CSV formats using DBeaver and SQL</li>
-            <li>Designed and implemented a graph-aware schema in Neo4j, enabling trust-score-based filtering and efficient exploration</li>
-            <li>Built a full-stack Python platform supporting data ingestion, search, and interactive graph visualization</li>
-            <li>Enhanced internal curation workflows by enabling faster queries, more intuitive exploration, and improved data quality control</li>
+          <p class="card__meta">Apr 2025 - Present · Bioinformatics Core</p>
+          <p style="font-size:0.82rem; color:var(--muted); margin-bottom:0.5rem;">Supervisors: Adrien Rougny, Marek Ostazewski</p>
+          <ul style="margin:0.5rem 0; padding-left:1.25rem; font-size:0.93rem;">
+            <li>Integrated gene/protein identifier mappings across BridgeDb, HGNC and other resources (1M+ entries)</li>
+            <li>Designed a graph-aware schema in Neo4j with trust-score-based filtering</li>
+            <li>Built a full-stack Python platform for data ingestion, search and graph visualization</li>
+            <li>Standardized identifier mappings into structured formats using DBeaver and SQL</li>
           </ul>
         </article>
-
         <article class="card">
           <h3>Summer Intern</h3>
           <p><strong>University of Luxembourg</strong></p>
           <p class="card__meta">Jul 2025 - Aug 2025</p>
-          <p>Supervisors: Sana Nouzri, Sukriti Bhattacharya (LIST)</p>
-          <ul style="margin: 0.75rem 0; padding-left: 1.25rem; font-size: 0.93rem;">
-            <li>Built an OCR-to-RAG pipeline converting scanned workbooks into a searchable knowledge base with provenance.</li>
-            <li>Applied GPT-4o Vision OCR for structured extraction of exercises, tables, and audio prompts.</li>
-            <li>Orchestrated a multi-agent LLM to create coherent chunks enriched with metadata for explainable retrieval.</li>
-            <li>Optimized a Chroma vector store with a Hugging Face embedding model for efficient top-k retrieval.</li>
-            <li>Developed a Streamlit interface with versioned runs and cross-run de-duplication.</li>
+          <p style="font-size:0.82rem; color:var(--muted); margin-bottom:0.5rem;">Supervisors: Sana Nouzri, Sukriti Bhattacharya (LIST)</p>
+          <ul style="margin:0.5rem 0; padding-left:1.25rem; font-size:0.93rem;">
+            <li>Built an OCR-to-RAG pipeline converting scanned workbooks into a searchable knowledge base</li>
+            <li>Applied GPT-4o Vision for structured extraction of exercises, tables and audio prompts</li>
+            <li>Orchestrated a multi-agent LLM pipeline with metadata-enriched chunks for explainable retrieval</li>
+            <li>Optimized a Chroma vector store with Hugging Face embeddings for top-k retrieval</li>
+            <li>Developed a Streamlit interface with versioned runs and cross-run de-duplication</li>
           </ul>
         </article>
-
         <article class="card">
           <h3>Solution Developer</h3>
           <p><strong>Brane Enterprises, Hyderabad, India</strong></p>
           <p class="card__meta">Jun 2023 - Jul 2024</p>
-          <ul style="margin: 0.75rem 0; padding-left: 1.25rem; font-size: 0.93rem;">
-            <li>Engineered 15+ end-to-end solutions integrating data workflows, logic design, and front-end development</li>
+          <ul style="margin:0.5rem 0; padding-left:1.25rem; font-size:0.93rem;">
+            <li>Engineered 15+ end-to-end solutions integrating data workflows, logic design and front-end development</li>
             <li>Improved development speed by 30% through optimized workflows and platform integration</li>
-            <li>Ensured accurate data handling during development/testing, reducing integration issues</li>
             <li>Collaborated with 3+ cross-functional teams to deliver user-centric applications</li>
             <li>Enhanced workflow efficiency and improved user satisfaction ratings by 20%</li>
           </ul>
@@ -183,7 +233,7 @@
     </div>
   </section>
 
-  <!-- Awards Section -->
+  <!-- Awards -->
   <section id="awards" class="section">
     <div class="container">
       <h2>Awards & Achievements</h2>
@@ -193,172 +243,144 @@
           <p><strong>JNTU Kakinada</strong></p>
           <p class="card__meta">End of 7th Semester</p>
           <p>
-            Achieved the highest academic performance in the university at the end of the 7th semester, 
-            demonstrating consistent excellence and dedication to academic pursuits.
-          </p>
-          <p>
-            Missed the university gold medal by just 0.006 points in the 8th semester, maintaining 
-            exceptional academic standards throughout undergraduate studies with a final GPA of 9.3/10.
+            Highest academic performance in the university. Missed the gold medal by 0.006 points
+            in the 8th semester. Final GPA: 9.3/10.
           </p>
         </article>
-
         <article class="card">
-          <h3>AP EAMCET 2019 - Top 2.4%</h3>
+          <h3>AP EAMCET 2019 · Top 2.4%</h3>
           <p><strong>Andhra Pradesh Engineering Entrance Exam</strong></p>
           <p class="card__meta">Rank: 4547 / 185,711 Students</p>
           <p>
-            Secured an excellent rank in one of India's most competitive engineering entrance examinations, 
-            placing in the top 2.4% among nearly 186,000 students in the engineering stream.
+            Top 2.4% among nearly 186,000 students in one of India's most competitive engineering entrance exams.
           </p>
         </article>
-
         <article class="card">
           <h3>Academic Excellence</h3>
           <p><strong>High School</strong></p>
           <p class="card__meta">GPA: 9.94/10</p>
           <p>
-            Outstanding academic performance in high school, demonstrating strong foundations and 
-            dedication from early education.
+            Outstanding academic performance with strong foundations from early education.
           </p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills" class="section section--alt">
     <div class="container">
       <h2>Skills & Tools</h2>
-      <div style="display: grid; gap: 2rem;">
-        <div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Programming & Data Science</h3>
-          <div class="chips">
-            <span class="chip">Python</span>
-            <span class="chip">R</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Pandas</span>
-            <span class="chip">NumPy</span>
-            <span class="chip">scikit-learn</span>
-            <span class="chip">PyTorch</span>
-            <span class="chip">Machine Learning</span>
-            <span class="chip">Deep Learning</span>
-          </div>
-        </div>
-        <div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Specialized Areas</h3>
-          <div class="chips">
-            <span class="chip">Bioinformatics</span>
-            <span class="chip">Python and R</span>
-            <span class="chip">Parallel Computing</span>
-            <span class="chip">Computer Vision</span>
-            <span class="chip">NLP</span>
-            <span class="chip">Time Series & Forecasting (ARIMA, VAR, Neural Networks)</span>
-            <span class="chip">Big Data</span>
-            <span class="chip">Graph Neural Networks</span>
-          </div>
-        </div>
-        <div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Databases & Big Data</h3>
-          <div class="chips">
-            <span class="chip">MongoDB</span>
-            <span class="chip">Neo4j</span>
-            <span class="chip">Kùzu</span>
-            <span class="chip">Hadoop</span>
-            <span class="chip">Spark</span>
-            <span class="chip">DBeaver</span>
-          </div>
-        </div>
-        <div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Tools & Platforms</h3>
-          <div class="chips">
-            <span class="chip">HPC</span>
-            <span class="chip">GPU Computing</span>
-            <span class="chip">Nix (Reproducibility)</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Git & GitHub</span>
-            <span class="chip">Tableau</span>
-            <span class="chip">Power BI</span>
-            <span class="chip">LaTeX</span>
-          </div>
-        </div>
-        <div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Soft Skills</h3>
-          <div class="chips">
-            <span class="chip">Project Management</span>
-            <span class="chip">Time Management</span>
-            <span class="chip">Solution-Oriented</span>
-            <span class="chip">Resilience</span>
-            <span class="chip">Active Listening</span>
-            <span class="chip">Collaboration</span>
-          </div>
-        </div>
+      <div class="skills-wrapper">
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies & Tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Languages</td>
+              <td>Python, R, SQL, JavaScript</td>
+            </tr>
+            <tr>
+              <td>ML / AI</td>
+              <td>scikit-learn, PyTorch, XGBoost, LLMs, Transformers, NLP, Computer Vision, Graph Neural Networks, Time Series</td>
+            </tr>
+            <tr>
+              <td>Data Engineering</td>
+              <td>Pandas, NumPy, Spark, Hadoop, HPC, GPU Computing, Docker, Nix</td>
+            </tr>
+            <tr>
+              <td>Databases</td>
+              <td>MongoDB, Neo4j, Kùzu, DBeaver, SQL</td>
+            </tr>
+            <tr>
+              <td>Dev & Infra</td>
+              <td>Git & GitHub, Streamlit, FastAPI, React, LaTeX</td>
+            </tr>
+            <tr>
+              <td>Visualization</td>
+              <td>Tableau, Power BI, Matplotlib, Plotly</td>
+            </tr>
+            <tr>
+              <td>Soft Skills</td>
+              <td>Project Management, Collaboration, Active Listening, Solution-Oriented, Resilience</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects" class="section">
     <div class="container">
       <h2>Projects</h2>
       <div class="grid">
         <article class="card">
-          <h3><a href="https://github.com/Sowmya-Harsh/RNA-Seq_RAP" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">RNA-Seq Analysis Pipeline</a></h3>
+          <h3><a href="https://github.com/Sowmya-Harsh" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">PlayinGrocery</a></h3>
           <p>
-            Comprehensive Reproducible RNA-Seq data analysis pipeline for differential gene expression analysis. 
-            Implemented quality control, read alignment, quantification, and statistical analysis using 
-            DESeq2 to identify differentially expressed genes and biological pathways.
+            Multi-agent AI app that automates grocery planning. Discovers nearby stores, generates weekly
+            meal plans, scrapes live prices, and optimizes a shopping list within a set budget.
           </p>
-          <p class="card__meta">R · Bioconductor · DESeq2 · RNA-Seq · Bioinformatics</p>
-          <div class="card__links">
-            <a href="https://github.com/Sowmya-Harsh/RNA-Seq_RAP" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3><a href="https://github.com/Sowmya-Harsh/Resume_Job_Fit" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">Resume-Job Fit Analyzer</a></h3>
-          <p>
-            AI-powered tool to analyze resume-job description compatibility using NLP techniques. 
-            Extracts key skills, experience, and qualifications to provide matching scores and 
-            recommendations for improving resume alignment with job requirements.
-          </p>
-          <p class="card__meta">Python · NLP · scikit-learn · Text Analysis · Machine Learning</p>
-          <div class="card__links">
-            <a href="https://github.com/Sowmya-Harsh/Resume_Job_Fit" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3><a href="https://github.com/Sowmya-Harsh/Biomedical-Literature-Mining" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">Biomedical Literature Mining</a></h3>
-          <p>
-            NLP pipeline to extract biomedical entities and relationships from scientific abstracts. 
-            Uses named entity recognition and relation extraction to construct knowledge graphs for 
-            hypothesis generation and literature-based discovery in biomedicine.
-          </p>
-          <p class="card__meta">Python · NLP · spaCy · Neo4j · Knowledge Graphs · BioBERT</p>
-          <div class="card__links">
-            <a href="https://github.com/Sowmya-Harsh/Biomedical-Literature-Mining" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Time Series Forecasting for Energy Demand</h3>
-          <p>
-            Built ARIMA and deep learning models to forecast short-term energy demand, comparing classical
-            statistical models with LSTM-based approaches on real-world data to optimize prediction accuracy.
-          </p>
-          <p class="card__meta">Python · Pandas · ARIMA · LSTMs · Time Series · Forecasting</p>
+          <p class="card__meta">Node.js · React · Vite · Gemini AI · Playwright · Multi-Agent Systems</p>
           <div class="card__links">
             <a href="https://github.com/Sowmya-Harsh" target="_blank" rel="noopener">GitHub</a>
           </div>
         </article>
-
+        <article class="card">
+          <h3><a href="https://github.com/Sowmya-Harsh/Resume_Job_Fit" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">Resume-Job Fit Analyzer</a></h3>
+          <p>
+            NLP pipeline combining Sentence-BERT embeddings with TF-IDF and structured signals to classify
+            resume-JD pairs. Deployed on Hugging Face Spaces with a Gradio interface and PDF ingestion.
+          </p>
+          <p class="card__meta">Python · NLP · BERT · scikit-learn · Gradio · Hugging Face</p>
+          <div class="card__links">
+            <a href="https://github.com/Sowmya-Harsh/Resume_Job_Fit" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/Sowmya-Harsh/Biomedical-Literature-Mining" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">Biomedical Literature Mining</a></h3>
+          <p>
+            NLP pipeline for extracting biomedical entities and relationships from scientific abstracts,
+            constructing knowledge graphs for literature-based discovery.
+          </p>
+          <p class="card__meta">Python · spaCy · Neo4j · Knowledge Graphs · BioBERT</p>
+          <div class="card__links">
+            <a href="https://github.com/Sowmya-Harsh/Biomedical-Literature-Mining" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/Sowmya-Harsh/RNA-Seq_RAP" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">RNA-Seq Analysis Pipeline</a></h3>
+          <p>
+            Reproducible RNA-Seq pipeline for differential gene expression analysis covering quality
+            control, alignment, quantification and statistical analysis using DESeq2.
+          </p>
+          <p class="card__meta">R · Bioconductor · DESeq2 · RNA-Seq</p>
+          <div class="card__links">
+            <a href="https://github.com/Sowmya-Harsh/RNA-Seq_RAP" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Time Series Forecasting · Energy Demand</h3>
+          <p>
+            Compared ARIMA and LSTM-based deep learning models for short-term energy demand
+            forecasting on real-world data to optimize prediction accuracy.
+          </p>
+          <p class="card__meta">Python · ARIMA · LSTMs · Time Series · Forecasting</p>
+          <div class="card__links">
+            <a href="https://github.com/Sowmya-Harsh" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
         <article class="card">
           <h3>GraphSAGE for Gene Expression Networks</h3>
           <p>
-            Modeled patient similarity as a graph and applied GraphSAGE to predict disease progression from
-            high-dimensional gene expression data, enabling personalized medicine insights.
+            Modeled patient similarity as a graph and applied GraphSAGE to predict disease progression
+            from high-dimensional gene expression data.
           </p>
-          <p class="card__meta">PyTorch Geometric · GraphSAGE · Bioinformatics · Graph Neural Networks</p>
+          <p class="card__meta">PyTorch Geometric · GraphSAGE · Graph Neural Networks</p>
           <div class="card__links">
             <a href="https://github.com/Sowmya-Harsh" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -367,14 +389,14 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="section section--alt">
     <div class="container two-col">
       <div>
         <h2>Contact</h2>
         <p>
-          I'm always happy to discuss research collaborations, projects, or research opportunities in machine learning, 
-          data science, and bioinformatics. Feel free to reach out!
+          Always happy to discuss data science roles, ML collaborations, or research opportunities.
+          Feel free to reach out!
         </p>
         <ul class="contact-list">
           <li><i class="fas fa-envelope"></i> Email: <a href="mailto:sowmyajanmahanthi@gmail.com" target="_blank" rel="noopener">sowmyajanmahanthi@gmail.com</a></li>
@@ -384,9 +406,9 @@
       </div>
       <div class="contact-card">
         <h3>Languages</h3>
-        <ul style="list-style: none; padding: 0; margin: 0.5rem 0 0;">
-          <li style="margin-bottom: 0.4rem;"><strong>English:</strong> Fluent</li>
-          <li style="margin-bottom: 0.4rem;"><strong>German:</strong> Basic (A2)</li>
+        <ul style="list-style:none; padding:0; margin:0.5rem 0 0;">
+          <li style="margin-bottom:0.4rem;"><strong>English:</strong> Fluent</li>
+          <li style="margin-bottom:0.4rem;"><strong>German:</strong> Basic (A2)</li>
           <li><strong>French:</strong> Basic</li>
         </ul>
       </div>
@@ -397,7 +419,7 @@
   <footer class="footer">
     <div class="container footer__content">
       <span>© <span id="year"></span> Sowmya Janmahanthi</span>
-      <a href="#top" class="back-to-top">↑ Back to top</a>
+      <a href="#top" class="back-to-top">Back to top</a>
     </div>
   </footer>
 
