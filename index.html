@@ -322,9 +322,11 @@
     <main>
       <p>Hi! I'm Sowmya, a data scientist and machine learning engineer who likes turning messy data into tools people can actually use. I'm finishing a Master's in Data Science at the <a href="https://www.uni.lu/">University of Luxembourg</a>, focused on statistics, machine learning, and AI systems that work end to end.</p>
 
-      <p>Right now I'm doing my thesis at the <a href="https://www.uni.lu/lcsb-en/">Luxembourg Centre for Systems Biomedicine</a>, untangling gene and protein identifiers across BridgeDb, HGNC, and other biomedical resources (more than 10 million mappings) and giving them a home in a graph-aware Neo4j schema with trust scores built in. On top of that I built a full-stack Python platform so people can ingest, search, and actually <em>see</em> the graph instead of squinting at a spreadsheet.</p>
+      <p>Right now I'm a data science intern at the <a href="https://www.uni.lu/lcsb-en/">Luxembourg Centre for Systems Biomedicine</a>, building end-to-end deep-learning pipelines to prepare biological data for foundation models, and adapting methods like Optimal Transport and temporal conditioning to get more out of them. A lot of the care goes into the data itself: strict integrity, no leakage across train and test, because a model is only as trustworthy as the pipeline behind it.</p>
 
-      <p>Before that, I spent a summer with LIST building an OCR-to-RAG pipeline that turned scanned workbooks into a searchable knowledge base, using GPT-4o Vision to pull structured exercises, tables, and audio prompts off the page, wired to a multi-agent LLM pipeline for explainable retrieval.</p>
+      <p>Before that, as a research assistant at the University of Luxembourg, I built <em>BioHop</em>, a full-stack tool that maps biological identifiers at scale (10M+ records, scraped and cleaned with parallel processing) and lets people explore them as a Neo4j knowledge graph instead of squinting at a spreadsheet.</p>
+
+      <p>I also spent a summer with LIST building an OCR-to-RAG pipeline that turned scanned workbooks into a searchable knowledge base, using GPT-4o Vision to pull structured exercises, tables, and audio prompts off the page, wired to a multi-agent LLM pipeline for explainable retrieval.</p>
 
       <p>And before Luxembourg, I was a Business Solutions Analyst at Brane Enterprises in Hyderabad, where I shipped 15+ end-to-end tools and learned how to move fast without breaking the people who depend on your software.</p>
 
@@ -342,36 +344,43 @@
       <!-- ============ DETAIL SECTIONS ============ -->
 
       <section class="block" id="about">
-        <p class="sec-eyebrow">~/how-i-work</p>
-        <h2>How I work</h2>
-        <p>I think like a business analyst before I think like an engineer: I start from the problem and the people who have it, then work backward to the model or the pipeline. Problem-solving is the part I'm genuinely best at, and I'm most useful when I'm dropped into something I know nothing about. I taught myself Neo4j, HPC, and Nix from scratch for my thesis; at Brane I shipped 15+ production tools across domains I'd never touched and cut development time by 30%; and I went from a civil engineering degree to building ML systems in a new country. Hand me an unfamiliar problem and a deadline, and I'll get to a working answer faster than you'd expect.</p>
       </section>
-
       <section class="block">
         <p class="sec-eyebrow">~/experience</p>
         <h2>Experience</h2>
 
         <div class="entry">
-          <h3>Data Science Intern <span style="font-weight:400;font-size:15px;color:var(--muted);">(Thesis)</span></h3>
-          <p class="org">Luxembourg Centre for Systems Biomedicine</p>
-          <p class="meta">Apr 2025 – Present · Bioinformatics Core</p>
+          <h3>Data Science Intern</h3>
+          <p class="org">Luxembourg Centre for Systems Biomedicine (LCSB)</p>
+          <p class="meta">Mar 2026 – Present · Belval, Luxembourg</p>
           <ul>
-            <li>Integrated gene and protein identifier mappings across BridgeDb, HGNC, and other resources (10M+ entries).</li>
-            <li>Designed a graph-aware Neo4j schema with trust-score-based filtering.</li>
-            <li>Built a full-stack Python platform for data ingestion, search, and graph visualization.</li>
+            <li>Analysing complex biological datasets and designing ETL workflows to prepare data for foundation models, with strict data integrity and no leakage across train/test splits.</li>
+            <li>Designing an end-to-end deep-learning pipeline, adapting state-of-the-art methods including Optimal Transport and temporal conditioning to improve model performance.</li>
           </ul>
+          <p class="tech" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);margin:8px 0 0;">Python · PyTorch · Transformers · predictive modelling · HPC</p>
+        </div>
+
+        <div class="entry">
+          <h3>Research Assistant <span style="font-weight:400;font-size:15px;color:var(--muted);">(Data Engineering)</span></h3>
+          <p class="org">University of Luxembourg</p>
+          <p class="meta">Apr 2025 – Feb 2026 · Belval, Luxembourg</p>
+          <ul>
+            <li>Built BioHop, a full-stack Python tool for large-scale biological entity mapping with knowledge-graph visualisation in Neo4j.</li>
+            <li>Automated web scraping and ETL of 10M+ records from bulk data sources with parallel processing, and regex-based validation for identifier deduplication and standardisation.</li>
+          </ul>
+          <p class="tech" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);margin:8px 0 0;">Python · Neo4j · SQL · Flask · JavaScript · parallel processing · ETL</p>
         </div>
 
         <div class="entry">
           <h3>Summer Intern</h3>
           <p class="org">University of Luxembourg (with LIST)</p>
-          <p class="meta">Jul 2025 – Aug 2025</p>
+          <p class="meta">Jul 2025 – Aug 2025 · Belval, Luxembourg</p>
           <ul>
             <li>Built an OCR-to-RAG pipeline converting scanned workbooks into a searchable knowledge base.</li>
             <li>Applied GPT-4o Vision for structured extraction of exercises, tables, and audio prompts.</li>
             <li>Orchestrated a multi-agent LLM pipeline with metadata-enriched chunks for explainable retrieval.</li>
-            <li>Optimized a Chroma vector store with Hugging Face embeddings for top-k retrieval.</li>
           </ul>
+          <p class="tech" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);margin:8px 0 0;">Python · GPT-4o Vision · RAG · Chroma · multi-agent systems</p>
         </div>
 
         <div class="entry">
@@ -379,10 +388,11 @@
           <p class="org">Brane Enterprises, Hyderabad</p>
           <p class="meta">Jun 2023 – Jul 2024</p>
           <ul>
-            <li>Engineered 15+ end-to-end solutions spanning data workflows, logic design, and front-end development.</li>
+            <li>Built 15+ end-to-end solutions spanning data workflows, logic design, and front-end development.</li>
             <li>Improved development speed by 30% through optimized workflows and platform integration.</li>
-            <li>Collaborated with 3+ cross-functional teams and raised user satisfaction by 20%.</li>
+            <li>Worked with 3+ cross-functional teams to ship user-facing applications.</li>
           </ul>
+          <p class="tech" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);margin:8px 0 0;">workflow automation · front-end · cross-functional delivery</p>
         </div>
       </section>
 
@@ -478,7 +488,7 @@
 
       <footer>
         <a href="mailto:sowmyajanmahanthi@gmail.com">email</a>
-        <a href="https://www.linkedin.com/in/sowmyajanmahanthi/">linkedin</a>
+        <a href="https://www.linkedin.com/in/sowmyaj4547/">linkedin</a>
         <a href="https://github.com/Sowmya-Harsh">github</a>
         <span class="copy">© 2026 Sowmya Janmahanthi</span>
       </footer>
