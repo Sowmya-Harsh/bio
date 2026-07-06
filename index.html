@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Sowmya Janmahanthi</title>
-<meta name="description" content="Sowmya Janmahanthi — data scientist and ML engineer working with graphs, NLP, and biomedical data.">
+<meta name="description" content="Sowmya Janmahanthi, data scientist and ML engineer working with graphs, NLP, and biomedical data.">
 <meta property="og:title" content="About Sowmya Janmahanthi">
 <meta property="og:description" content="Data scientist and ML engineer working with graphs, NLP, and biomedical data.">
 <meta property="og:type" content="website">
@@ -77,7 +77,13 @@
   .term-nav a[aria-current="page"]{color:var(--ink);}
 
   /* ---- hero ---- */
-  header.hero{padding-top:52px;}
+  header.hero{
+    padding-top:52px;
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+  }
+  .hero-text{flex:1 1 auto; min-width:0;}
   .eyebrow{
     font-family:"IBM Plex Mono", monospace;
     font-size:13px;
@@ -111,14 +117,15 @@
   .tagline b{color:var(--ink); font-weight:500;}
 
   .portrait{
-    width:100%;
-    max-width:360px;
+    flex:0 0 auto;
+    width:150px;
+    height:150px;
     aspect-ratio:1/1;
     object-fit:cover;
     border-radius:12px;
     border:1px solid var(--line-strong);
     display:block;
-    margin:0 0 46px;
+    margin-top:6px;
     background:var(--card);
   }
 
@@ -180,6 +187,15 @@
   @media (prefers-reduced-motion: reduce){
     .eyebrow .cursor{animation:none;}
   }
+  @media (max-width:560px){
+    header.hero{
+      flex-direction:column-reverse;
+      align-items:flex-start;
+      gap:22px;
+    }
+    .portrait{width:118px; height:118px; margin-top:0;}
+    .tagline{margin-bottom:8px;}
+  }
   @media (max-width:480px){
     body{font-size:18px;}
     .term-nav{gap:12px;}
@@ -202,9 +218,11 @@
 
   <div class="wrap">
     <header class="hero">
-      <p class="eyebrow">~/about<span class="cursor" aria-hidden="true"></span></p>
-      <h1>Hi, I'm Sowmya.</h1>
-      <p class="tagline"><b>Data scientist</b> · graph nerd · pipeline builder · relentless debugger</p>
+      <div class="hero-text">
+        <p class="eyebrow">~/about<span class="cursor" aria-hidden="true"></span></p>
+        <h1>Hi, I'm Sowmya.</h1>
+        <p class="tagline"><b>Data scientist</b> · graph nerd · pipeline builder · relentless debugger</p>
+      </div>
 
       <img class="portrait"
            src="https://lh3.googleusercontent.com/d/1cceI_dLa84S6Htmop3apXOaVsh2TeD8a"
@@ -212,26 +230,26 @@
     </header>
 
     <main>
-      <p>Hi! I'm Sowmya, a data scientist and machine learning engineer who likes turning messy, complicated data into tools people can actually use. I'm finishing a Master's in Data Science at the <a href="https://www.uni.lu/">University of Luxembourg</a>, where I focus on statistics, machine learning, and the kind of AI systems that have to work end to end — from the data pipeline all the way to the thing someone clicks on.</p>
+      <p>Hi! I'm Sowmya, a data scientist and machine learning engineer who likes turning messy data into tools people can actually use. I'm finishing a Master's in Data Science at the <a href="https://www.uni.lu/">University of Luxembourg</a>, focused on statistics, machine learning, and AI systems that work end to end.</p>
 
-      <p>Right now I'm doing my thesis at the <a href="https://www.uni.lu/lcsb-en/">Luxembourg Centre for Systems Biomedicine</a>, in the Bioinformatics Core. I've been untangling gene and protein identifiers across BridgeDb, HGNC, and a pile of other biomedical resources — more than a million mappings — and giving them a home in a graph-aware Neo4j schema with trust scores baked in. On top of that I built a full-stack Python platform so people can ingest, search, and actually <em>see</em> the graph instead of squinting at a spreadsheet.</p>
+      <p>Right now I'm doing my thesis at the <a href="https://www.uni.lu/lcsb-en/">Luxembourg Centre for Systems Biomedicine</a>, untangling gene and protein identifiers across BridgeDb, HGNC, and other biomedical resources (more than 10 million mappings) and giving them a home in a graph-aware Neo4j schema with trust scores built in. On top of that I built a full-stack Python platform so people can ingest, search, and actually <em>see</em> the graph instead of squinting at a spreadsheet.</p>
 
-      <p>Before the thesis, I spent a summer at the University of Luxembourg (with LIST) building an OCR-to-RAG pipeline that turned scanned workbooks into a searchable knowledge base. I used GPT-4o Vision to pull structured exercises, tables, and audio prompts off the page, wired up a multi-agent LLM pipeline for explainable retrieval, and wrapped the whole thing in a Streamlit interface with versioned runs.</p>
+      <p>Before that, I spent a summer with LIST building an OCR-to-RAG pipeline that turned scanned workbooks into a searchable knowledge base, using GPT-4o Vision to pull structured exercises, tables, and audio prompts off the page, wired to a multi-agent LLM pipeline for explainable retrieval.</p>
 
-      <p>And before Luxembourg, I was a Solution Developer at Brane Enterprises in Hyderabad, where I shipped 15+ end-to-end tools — data workflows, logic, front-ends — and learned how to move fast without breaking the people who depend on your software.</p>
+      <p>And before Luxembourg, I was a Business Solutions Analyst at Brane Enterprises in Hyderabad, where I shipped 15+ end-to-end tools and learned how to move fast without breaking the people who depend on your software.</p>
 
-      <p>When I'm not on a deadline, I'm usually building something with graphs or language: <a href="https://github.com/Sowmya-Harsh">PlayinGrocery</a>, a multi-agent app that scrapes live grocery prices and optimizes a shopping list to a budget; a <a href="https://github.com/Sowmya-Harsh/Resume_Job_Fit">resume-to-job-fit analyzer</a> built on Sentence-BERT; a <a href="https://github.com/Sowmya-Harsh/Biomedical-Literature-Mining">biomedical literature miner</a> that turns abstracts into knowledge graphs; and a <a href="https://github.com/Sowmya-Harsh">GraphSAGE model</a> that treats patients as a network to predict disease progression. I like problems where the structure of the data is half the answer.</p>
+      <p>When I'm not on a deadline, I like building things with graphs and language: multi-agent apps, retrieval systems, knowledge-graph miners, and graph neural networks for biomedical data. I like problems where the structure of the data is half the answer.</p>
 
-      <p>Before all of this, I studied Civil Engineering at JNTU Kakinada in India — which sounds like a detour, but it's where I fell for mathematics and the habit of building things that have to hold up in the real world. That love stuck: I still tutor secondary-school students (S3–S7) in maths, and there's nothing like explaining a proof to a teenager to keep your own fundamentals honest.</p>
+      <p>Before all of this I studied Civil Engineering, which sounds like a detour, but it's where I fell for mathematics. That love stuck: I still tutor secondary-school students (S3 to S7) in maths, and there's nothing like explaining a proof to a teenager to keep your own fundamentals honest.</p>
 
       <hr class="rule">
 
       <p class="now">
         <span class="label">$ status</span> &nbsp;finishing my Master's in Luxembourg, open to data science, ML &amp; research roles.<br>
-        <span class="label">$ stack</span> &nbsp;<span class="stack">python · pytorch · transformers · neo4j · streamlit · sql · pandas</span>
+        <span class="label">$ stack</span> &nbsp;<span class="stack">python · pytorch · transformers · neo4j · sql · pandas</span>
       </p>
 
-      <p>If you're working on something with graphs, language, or biomedical data — or you just want to talk shop — say hi.</p>
+      <p>If you're working on something with graphs, language, or biomedical data, or you just want to talk shop, say hi. For the full picture, my <a href="https://sowmya-harsh.github.io/bio/">projects, publications, and achievements</a> live on the home page.</p>
 
       <footer>
         <a href="mailto:sowmyajanmahanthi@gmail.com">email</a>
