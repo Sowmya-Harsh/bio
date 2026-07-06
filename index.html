@@ -42,7 +42,7 @@
   .mono{font-family:"IBM Plex Mono", ui-monospace, monospace;}
 
   .wrap{
-    max-width:640px;
+    max-width:900px;
     margin:0 auto;
     padding:0 26px 90px;
   }
@@ -81,14 +81,16 @@
     padding-top:52px;
     display:flex;
     align-items:flex-start;
-    gap:30px;
+    gap:40px;
+    margin-left: -10px;
   }
   .portrait{
     flex:0 0 auto;
     width:150px;
     height:auto;
     aspect-ratio:1/1;
-    object-fit:cover;
+    object-fit:contain;
+    background: var(--card);
     border-radius:12px;
     border:1px solid var(--line-strong);
     display:block;
