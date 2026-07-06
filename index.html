@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Sowmya Janmahanthi</title>
-<meta name="description" content="Sowmya Janmahanthi, data scientist and ML engineer working with graphs, NLP, and biomedical data.">
-<meta property="og:title" content="About Sowmya Janmahanthi">
-<meta property="og:description" content="Data scientist and ML engineer working with graphs, NLP, and biomedical data.">
+<title>Sowmya Janmahanthi · Data Scientist</title>
+<meta name="description" content="Sowmya Janmahanthi, data scientist and ML engineer. Predictive modelling, NLP, and biomedical data.">
+<meta property="og:title" content="Sowmya Janmahanthi · Data Scientist">
+<meta property="og:description" content="Data scientist and ML engineer. Predictive modelling, NLP, and biomedical data.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
   }
 
   *{box-sizing:border-box;}
-  html{-webkit-text-size-adjust:100%;}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth;}
   body{
     margin:0;
     background:var(--paper);
@@ -83,6 +83,18 @@
     align-items:flex-start;
     gap:30px;
   }
+  .portrait{
+    flex:0 0 auto;
+    width:150px;
+    height:150px;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:12px;
+    border:1px solid var(--line-strong);
+    display:block;
+    margin-top:6px;
+    background:var(--card);
+  }
   .hero-text{flex:1 1 auto; min-width:0;}
   .eyebrow{
     font-family:"IBM Plex Mono", monospace;
@@ -102,7 +114,7 @@
   h1{
     font-family:"Newsreader", serif;
     font-weight:500;
-    font-size:clamp(40px, 8vw, 58px);
+    font-size:clamp(38px, 7.5vw, 56px);
     line-height:1.04;
     letter-spacing:-.01em;
     margin:0 0 20px;
@@ -115,19 +127,6 @@
     margin:0 0 40px;
   }
   .tagline b{color:var(--ink); font-weight:500;}
-
-  .portrait{
-    flex:0 0 auto;
-    width:150px;
-    height:150px;
-    aspect-ratio:1/1;
-    object-fit:cover;
-    border-radius:12px;
-    border:1px solid var(--line-strong);
-    display:block;
-    margin-top:6px;
-    background:var(--card);
-  }
 
   /* ---- body prose ---- */
   main p{margin:0 0 26px;}
@@ -165,9 +164,101 @@
   .now .label{color:var(--accent); font-weight:500;}
   .now .stack{color:var(--ink);}
 
+  /* ---- detail sections ---- */
+  section.block{
+    padding-top:46px;
+    margin-top:44px;
+    border-top:1px solid var(--line);
+    scroll-margin-top:20px;
+  }
+  section.block:first-of-type{border-top:0;}
+  .sec-eyebrow{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    color:var(--accent);
+    letter-spacing:.03em;
+    margin:0 0 6px;
+  }
+  section.block > h2{
+    font-family:"Newsreader", serif;
+    font-weight:500;
+    font-size:29px;
+    letter-spacing:-.01em;
+    margin:0 0 22px;
+  }
+
+  /* entries: experience / education */
+  .entry{
+    margin:0 0 26px;
+    padding-left:18px;
+    border-left:2px solid var(--line-strong);
+  }
+  .entry:last-child{margin-bottom:0;}
+  .entry h3{
+    font-family:"Newsreader", serif;
+    font-weight:600;
+    font-size:20px;
+    margin:0 0 3px;
+  }
+  .entry .org{font-size:18px; margin:0 0 3px;}
+  .entry .meta{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    color:var(--muted);
+    margin:0 0 10px;
+  }
+  .entry ul{margin:0; padding-left:19px;}
+  .entry li{margin:0 0 6px; font-size:17.5px; line-height:1.55;}
+  .entry p.line{font-size:17.5px; margin:0;}
+
+  /* skills key-value */
+  .kv{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:12px 18px;
+    font-size:16.5px;
+  }
+  .kv dt{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    color:var(--accent);
+    padding-top:4px;
+  }
+  .kv dd{margin:0; line-height:1.5;}
+
+  /* projects */
+  .proj{margin:0 0 22px;}
+  .proj:last-child{margin-bottom:0;}
+  .proj h3{
+    font-family:"Newsreader", serif;
+    font-weight:600;
+    font-size:19px;
+    margin:0 0 4px;
+  }
+  .proj h3 a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1.5px solid var(--accent);
+  }
+  .proj h3 a:hover, .proj h3 a:focus-visible{color:var(--accent); background:var(--accent-soft);}
+  .proj p{font-size:17.5px; margin:0 0 5px; line-height:1.55;}
+  .proj .tech{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    color:var(--muted);
+    margin:0;
+  }
+
+  /* achievements */
+  .ach{margin:0 0 18px;}
+  .ach:last-child{margin-bottom:0;}
+  .ach h3{font-family:"Newsreader", serif; font-weight:600; font-size:18.5px; margin:0 0 3px;}
+  .ach p{font-size:17px; margin:0; line-height:1.5;}
+  .ach .meta{font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--muted);}
+
   /* ---- footer ---- */
   footer{
-    margin-top:56px;
+    margin-top:52px;
     padding-top:26px;
     border-top:1px solid var(--line);
     display:flex;
@@ -185,16 +276,16 @@
 
   @keyframes blink{50%{opacity:0;}}
   @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
     .eyebrow .cursor{animation:none;}
   }
   @media (max-width:560px){
-    header.hero{
-      flex-direction:column-reverse;
-      align-items:flex-start;
-      gap:22px;
-    }
-    .portrait{width:118px; height:118px; margin-top:0;}
+    header.hero{flex-direction:column; align-items:flex-start; gap:22px;}
+    .portrait{width:132px; height:132px; margin-top:0;}
     .tagline{margin-bottom:8px;}
+    .kv{grid-template-columns:1fr; gap:2px 0;}
+    .kv dt{padding-top:12px;}
+    .kv dd{margin-bottom:4px;}
   }
   @media (max-width:480px){
     body{font-size:18px;}
@@ -205,28 +296,27 @@
 </head>
 <body>
 
-  <div class="term">
+  <div class="term" id="top">
     <div class="term-bar">
       <span class="dots"><span></span><span></span><span></span></span>
       <span class="mono"><span class="term-path">sowmya@human</span>:~$ whoami</span>
       <nav class="term-nav">
-        <a href="https://sowmya-harsh.github.io/bio/">~/home</a>
-        <a href="#" aria-current="page">~/about</a>
+        <a href="#top" aria-current="page">~/home</a>
+        <a href="#about">~/about</a>
       </nav>
     </div>
   </div>
 
   <div class="wrap">
     <header class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">~/about<span class="cursor" aria-hidden="true"></span></p>
-        <h1>Hi, I'm Sowmya.</h1>
-        <p class="tagline"><b>Data scientist</b> · graph nerd · pipeline builder · relentless debugger</p>
-      </div>
-
       <img class="portrait"
            src="https://lh3.googleusercontent.com/d/1cceI_dLa84S6Htmop3apXOaVsh2TeD8a"
            alt="Sowmya Janmahanthi">
+      <div class="hero-text">
+        <p class="eyebrow">~/whoami<span class="cursor" aria-hidden="true"></span></p>
+        <h1>Hi, I'm Sowmya.</h1>
+        <p class="tagline"><b>Data scientist</b> · predictive modeller · problem-solver · fast learner</p>
+      </div>
     </header>
 
     <main>
@@ -238,7 +328,7 @@
 
       <p>And before Luxembourg, I was a Business Solutions Analyst at Brane Enterprises in Hyderabad, where I shipped 15+ end-to-end tools and learned how to move fast without breaking the people who depend on your software.</p>
 
-      <p>When I'm not on a deadline, I like building things with graphs and language: multi-agent apps, retrieval systems, knowledge-graph miners, and graph neural networks for biomedical data. I like problems where the structure of the data is half the answer.</p>
+      <p>When I'm not on a deadline, I like building things with data and language: predictive models, multi-agent apps, retrieval systems, and knowledge-graph miners. I like problems where the structure of the data is half the answer.</p>
 
       <p>Before all of this I studied Civil Engineering, which sounds like a detour, but it's where I fell for mathematics. That love stuck: I still tutor secondary-school students (S3 to S7) in maths, and there's nothing like explaining a proof to a teenager to keep your own fundamentals honest.</p>
 
@@ -246,10 +336,145 @@
 
       <p class="now">
         <span class="label">$ status</span> &nbsp;finishing my Master's in Luxembourg, open to data science, ML &amp; research roles.<br>
-        <span class="label">$ stack</span> &nbsp;<span class="stack">python · pytorch · transformers · neo4j · sql · pandas</span>
+        <span class="label">$ stack</span> &nbsp;<span class="stack">python · scikit-learn · xgboost · pytorch · neo4j · sql · pandas</span>
       </p>
 
-      <p>If you're working on something with graphs, language, or biomedical data, or you just want to talk shop, say hi. For the full picture, my <a href="https://sowmya-harsh.github.io/bio/">projects, publications, and achievements</a> live on the home page.</p>
+      <!-- ============ DETAIL SECTIONS ============ -->
+
+      <section class="block" id="about">
+        <p class="sec-eyebrow">~/how-i-work</p>
+        <h2>How I work</h2>
+        <p>I think like a business analyst before I think like an engineer: I start from the problem and the people who have it, then work backward to the model or the pipeline. Problem-solving is the part I'm genuinely best at, and I'm most useful when I'm dropped into something I know nothing about. I taught myself Neo4j, HPC, and Nix from scratch for my thesis; at Brane I shipped 15+ production tools across domains I'd never touched and cut development time by 30%; and I went from a civil engineering degree to building ML systems in a new country. Hand me an unfamiliar problem and a deadline, and I'll get to a working answer faster than you'd expect.</p>
+      </section>
+
+      <section class="block">
+        <p class="sec-eyebrow">~/experience</p>
+        <h2>Experience</h2>
+
+        <div class="entry">
+          <h3>Data Science Intern <span style="font-weight:400;font-size:15px;color:var(--muted);">(Thesis)</span></h3>
+          <p class="org">Luxembourg Centre for Systems Biomedicine</p>
+          <p class="meta">Apr 2025 – Present · Bioinformatics Core</p>
+          <ul>
+            <li>Integrated gene and protein identifier mappings across BridgeDb, HGNC, and other resources (10M+ entries).</li>
+            <li>Designed a graph-aware Neo4j schema with trust-score-based filtering.</li>
+            <li>Built a full-stack Python platform for data ingestion, search, and graph visualization.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Summer Intern</h3>
+          <p class="org">University of Luxembourg (with LIST)</p>
+          <p class="meta">Jul 2025 – Aug 2025</p>
+          <ul>
+            <li>Built an OCR-to-RAG pipeline converting scanned workbooks into a searchable knowledge base.</li>
+            <li>Applied GPT-4o Vision for structured extraction of exercises, tables, and audio prompts.</li>
+            <li>Orchestrated a multi-agent LLM pipeline with metadata-enriched chunks for explainable retrieval.</li>
+            <li>Optimized a Chroma vector store with Hugging Face embeddings for top-k retrieval.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Business Solutions Analyst</h3>
+          <p class="org">Brane Enterprises, Hyderabad</p>
+          <p class="meta">Jun 2023 – Jul 2024</p>
+          <ul>
+            <li>Engineered 15+ end-to-end solutions spanning data workflows, logic design, and front-end development.</li>
+            <li>Improved development speed by 30% through optimized workflows and platform integration.</li>
+            <li>Collaborated with 3+ cross-functional teams and raised user satisfaction by 20%.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <p class="sec-eyebrow">~/skills</p>
+        <h2>Skills &amp; tools</h2>
+        <dl class="kv">
+          <dt>languages</dt><dd>Python, R, SQL, JavaScript</dd>
+          <dt>ml / ai</dt><dd>Predictive modelling, scikit-learn, XGBoost, time series (ARIMA, LSTM), PyTorch, transformers, NLP, computer vision, graph ML</dd>
+          <dt>data eng</dt><dd>Pandas, NumPy, Spark, Hadoop, HPC, GPU computing, Docker, Nix</dd>
+          <dt>databases</dt><dd>Neo4j, Kùzu, MongoDB, SQL, DBeaver</dd>
+          <dt>dev / infra</dt><dd>Git &amp; GitHub, FastAPI, React, LaTeX</dd>
+          <dt>viz</dt><dd>Tableau, Power BI, Matplotlib, Plotly</dd>
+          <dt>spoken</dt><dd>English (C1), French (B2), German (A2)</dd>
+        </dl>
+      </section>
+
+      <section class="block">
+        <p class="sec-eyebrow">~/projects</p>
+        <h2>Projects</h2>
+
+        <div class="proj">
+          <h3><a href="https://github.com/Sowmya-Harsh" target="_blank" rel="noopener">PlayinGrocery</a></h3>
+          <p>Multi-agent AI app that automates grocery planning: finds nearby stores, generates weekly meal plans, scrapes live prices, and optimizes a shopping list within a set budget.</p>
+          <p class="tech">Node.js · React · Vite · Gemini AI · Playwright · multi-agent systems</p>
+        </div>
+
+        <div class="proj">
+          <h3><a href="https://github.com/Sowmya-Harsh/Resume_Job_Fit" target="_blank" rel="noopener">Resume-Job Fit Analyzer</a></h3>
+          <p>NLP pipeline combining Sentence-BERT embeddings with TF-IDF and structured signals to classify resume-JD pairs. Deployed on Hugging Face Spaces with PDF ingestion.</p>
+          <p class="tech">Python · NLP · BERT · scikit-learn · Gradio · Hugging Face</p>
+        </div>
+
+        <div class="proj">
+          <h3>Time Series Forecasting · Energy Demand</h3>
+          <p>Compared ARIMA and LSTM models for short-term energy demand forecasting on real-world data to push predictive accuracy.</p>
+          <p class="tech">Python · ARIMA · LSTM · time series · forecasting</p>
+        </div>
+
+        <div class="proj">
+          <h3><a href="https://github.com/Sowmya-Harsh/Biomedical-Literature-Mining" target="_blank" rel="noopener">Biomedical Literature Mining</a></h3>
+          <p>NLP pipeline that extracts biomedical entities and relationships from scientific abstracts, building knowledge graphs for literature-based discovery.</p>
+          <p class="tech">Python · spaCy · Neo4j · knowledge graphs · BioBERT</p>
+        </div>
+
+        <div class="proj">
+          <h3><a href="https://github.com/Sowmya-Harsh/RNA-Seq_RAP" target="_blank" rel="noopener">RNA-Seq Analysis Pipeline</a></h3>
+          <p>Reproducible RNA-Seq pipeline for differential gene expression: quality control, alignment, quantification, and statistics with DESeq2.</p>
+          <p class="tech">R · Bioconductor · DESeq2 · RNA-Seq</p>
+        </div>
+
+        <div class="proj">
+          <h3>GraphSAGE for Gene Expression Networks</h3>
+          <p>Modeled patient similarity as a graph and predicted disease progression from high-dimensional gene expression data.</p>
+          <p class="tech">PyTorch Geometric · GraphSAGE · graph ML</p>
+        </div>
+      </section>
+
+      <section class="block">
+        <p class="sec-eyebrow">~/achievements</p>
+        <h2>Achievements</h2>
+
+        <div class="ach">
+          <h3>University Topper</h3>
+          <p>Highest academic performance in my undergraduate cohort. Missed the gold medal by 0.006 points in the final semester. <span class="meta">Final GPA 9.3/10.</span></p>
+        </div>
+        <div class="ach">
+          <h3>AP EAMCET 2019 · Top 2.4%</h3>
+          <p>Rank 4,547 of 185,711 in one of India's most competitive engineering entrance exams.</p>
+        </div>
+        <div class="ach">
+          <h3>Academic Excellence · High School</h3>
+          <p>GPA 9.94/10, with strong foundations in mathematics, physics, and chemistry.</p>
+        </div>
+      </section>
+
+      <section class="block">
+        <p class="sec-eyebrow">~/education</p>
+        <h2>Education</h2>
+
+        <div class="entry">
+          <h3>Master of Data Science</h3>
+          <p class="org">University of Luxembourg</p>
+          <p class="meta">2024 – 2026</p>
+          <p class="line">Statistical &amp; machine learning, deep learning, high-performance computing, big data analytics, bioinformatics.</p>
+        </div>
+        <div class="entry">
+          <h3>Bachelor's in Civil Engineering</h3>
+          <p class="meta">2019 – 2023 · GPA 9.3/10</p>
+          <p class="line">A strong foundation in mathematics and engineering, and where I first fell for maths.</p>
+        </div>
+      </section>
 
       <footer>
         <a href="mailto:sowmyajanmahanthi@gmail.com">email</a>
